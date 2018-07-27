@@ -1,0 +1,30 @@
+git init
+
+VVIREDDY-IN+vvireddy@VVIREDDY-IN MINGW64 /d/Study/DEVOPS/GIT (master)
+$ git remote add origin "https://github.com/vijayisadba/got.git"
+
+
+$ git pull origin master
+remote: Counting objects: 9, done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 9
+Unpacking objects: 100% (9/9), done.
+From https://github.com/vijayisadba/got
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        DevOps Training _ DevOps Tutorial For Beginners _ Git & Jenkins _ DevOps Tutorial _ Edureka.mp4
+        What is Git _ What is GitHub _ Git Tutorial _ GitHub Tutorial _ Devops Tutorial _ Edureka.mp4
+        git_commands.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+$ git add test.txt
+
+
