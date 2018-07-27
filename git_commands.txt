@@ -27,4 +27,114 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 $ git add test.txt
 
+$ git commit -m "Vijay Bhaskar Reddy"
+[master 8fb0a79] Vijay Bhaskar Reddy
+ Committer: vvireddy <vvireddy@VVIREDDY-IN.oradev.oraclecorp.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+
+$ git commit --amend --reset-author
+
+[master cb15e6f] Vijay Bhaskar Reddy
+ Committer: vvireddy <vvireddy@VVIREDDY-IN.oradev.oraclecorp.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+$ git add -A
+
+VVIREDDY-IN+vvireddy@VVIREDDY-IN MINGW64 /d/Study/DEVOPS/GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   git_commands.txt
+        new file:   test2.txt
+        new file:   testfolder/test1.txt
+
+$ git commit -a -m "Multi Add"
+[master 4602f34] Multi Add
+ Committer: vvireddy <vvireddy@VVIREDDY-IN.oradev.oraclecorp.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 30 insertions(+)
+ create mode 100644 git_commands.txt
+ create mode 100644 test2.txt
+ create mode 100644 testfolder/test1.txt
+
+$ git log
+commit 4602f34b94ce8379ada6892d47e893417372ace3
+Author: vvireddy <vvireddy@VVIREDDY-IN.oradev.oraclecorp.com>
+Date:   Fri Jul 27 19:14:14 2018 +0530
+
+    Multi Add
+
+commit cb15e6f72daa34d748cdf6f421c42fe9abbf92a1
+Author: vvireddy <vvireddy@VVIREDDY-IN.oradev.oraclecorp.com>
+Date:   Fri Jul 27 19:08:04 2018 +0530
+
+    Vijay Bhaskar Reddy
+
+commit 0af49cb111250b07332f15043087e7b539590e11
+Author: vijayisadba <34603780+vijayisadba@users.noreply.github.com>
+Date:   Sun Feb 11 20:45:22 2018 +0530
+
+    Update README.md
+
+commit bfd68f38290382f4ef038658f059190bd6bec887
+Author: vijayisadba <34603780+vijayisadba@users.noreply.github.com>
+Date:   Sun Feb 11 18:41:24 2018 +0530
+
+    Create HelloWorld.java
+
+$ git branch firstbranch
+
+VVIREDDY-IN+vvireddy@VVIREDDY-IN MINGW64 /d/Study/DEVOPS/GIT (master)
+$ git checkout firstbranch
+M       git_commands.txt
+Switched to branch 'firstbranch'
+
+VVIREDDY-IN+vvireddy@VVIREDDY-IN MINGW64 /d/Study/DEVOPS/GIT (firstbranch)
+
+VVIREDDY-IN+vvireddy@VVIREDDY-IN MINGW64 /d/Study/DEVOPS/GIT (master)
+$ git merge firstbranch
+Updating 4602f34..605f58b
+Fast-forward
+ test3.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test3.txt
+
 
