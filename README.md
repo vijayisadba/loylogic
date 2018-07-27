@@ -1,3 +1,3 @@
 # got
-Game of Thrones
+Game of Thrones.
 This is for testing
