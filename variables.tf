@@ -1,9 +1,9 @@
 variable "access_key" {
-default = "AKIA53ICT6FONLKQGIX4"
+default = "*********"
 }
 
 variable "secret_key" {
-default = "OJO+Utn3JIyQK4sAD5JZrFrkTS61cmpHqeJn6GRG"
+default = "******"
 }
 
 variable "region" {
