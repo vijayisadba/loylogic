@@ -1,0 +1,19 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+     - name: Copy artefact to private host
+       copy:
+         src: "{{ item['src'] }}"
+         dest: "{{ item['dest'] }}"
+         owner: root
+         group: root
+         mode: 0644
+       with_items:
+               - src: /mnt/artefact/com/example/maven-project/webapp/1.0-SNAPSHOT/webapp-1.0-SNAPSHOT.war
+               - dest: /usr/share/tomcat/webapps/
+     - name: Restart Tomcat service
+       service:
+           name: tomcat
+           state: restarted
+
