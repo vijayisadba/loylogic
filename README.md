@@ -5,5 +5,7 @@ the artefacts to /mnt/artefact/. Jenkins log attached.
 
 -> Ansible playbook is uploaded which copies the war to tomcat host webapps directory and restarts tomcat.
 
+..
+
 
 
